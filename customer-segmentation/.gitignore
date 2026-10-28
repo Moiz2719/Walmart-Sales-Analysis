@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Do not commit customer-level data or generated artifacts
+data/raw/*
+!data/README.md
+outputs/
+models/
+*.db
+*.sqlite
+*.sqlite3
+.DS_Store
