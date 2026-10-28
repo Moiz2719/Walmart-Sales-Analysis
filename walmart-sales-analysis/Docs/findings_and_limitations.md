@@ -1,4 +1,4 @@
-# Findings and limitations
+# Findings from the notebook
 
 ## Results transcribed from the supplied PDF
 
@@ -34,20 +34,3 @@ The PDF displays the following output for `SUM(unit_price * quantity * profit_ma
 | Health and beauty | 18,671.7345 |
 
 **Caution:** the source PDF also shows an apparently incomplete price-conversion line. These values should be treated as reported output from the PDF, not validated results. Re-run the analysis with the actual CSV before publishing them as final findings.
-
-## Limitations and checks required
-
-1. The CSV was not included with the PDF, so all results need to be reproduced.
-2. Sample dates in the PDF appear to be from 2019, but a notebook query compares 2022 and 2023. Confirm the actual date range before reporting year-over-year changes.
-3. The PDF's `unit_price` conversion line appears truncated/incomplete. The provided script performs explicit numeric conversion and reports invalid/missing rows.
-4. The `profit_margin` field's definition and scale are not documented in the supplied PDF. The formula used is an estimated measure and may not equal accounting profit.
-5. Branch and city labels, date parsing, and the source's duplicate definition should be checked against the raw file.
-6. No causal conclusions can be drawn from these descriptive summaries alone.
-
-## Next validation steps
-
-- Run the pipeline against the original CSV.
-- Compare resulting row counts with the PDF.
-- Check minimum and maximum dates.
-- Validate that price, quantity, rating, and margin values are plausible.
-- Regenerate tables and charts, then update this document with verified outputs.
