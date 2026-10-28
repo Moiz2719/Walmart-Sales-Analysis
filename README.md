@@ -12,4 +12,8 @@ Python, Pandas, SQLite, SQL, and Matplotlib.
 Python, Pandas, NumPy, SQLite, SQL, Matplotlib, and Seaborn.
 [Open project](./customer-churn-analysis/)
 
-Each project includes source code, documentation, reusable analysis queries, and a README with a high-level Mermaid architecture diagram.
+### 3. Customer Segmentation & Business Strategy
+Python, Pandas, scikit-learn, K-Means clustering, and customer profiling.
+[Open project](./customer-segmentation/)
+
+Each project includes source code, a `Docs/` folder, and a README with a high-level Mermaid architecture diagram.
