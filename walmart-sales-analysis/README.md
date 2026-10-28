@@ -1,16 +1,64 @@
 # Walmart Sales Analysis
 
-This project folder is part of a GitHub-ready starter package prepared from the supplied Walmart sales analytics notebook PDF. It includes cleaning, SQL analysis, visualisation scripts, documentation, and limitations.
+A retail transaction analytics project using Python, Pandas, SQLite, SQL, and Matplotlib to explore payment behaviour, product-category ratings, transaction timing, and dataset-derived sales measures.
 
-> Note: The original Walmart CSV was not included with the notebook PDF. The scripts have not been validated against the original dataset yet. See `Docs/findings_and_limitations.md` before relying on the reported figures.
+## Architecture overview
 
-## Files
-- `src/clean_data.py` — data-cleaning workflow
-- `src/run_analysis.py` — SQL/Pandas business analysis
-- `src/create_visualizations.py` — charts
-- `sql/business_queries.sql` — SQL examples
-- `Docs/` — overview, data dictionary, methodology, findings and limitations
-- `data/README.md` — instructions for placing the dataset locally
+The workflow moves from raw transaction data through cleaning and storage to SQL analysis and visual reporting.
 
-## Setup
-Install dependencies with `pip install -r requirements.txt`. Put the source CSV in the location described in `data/README.md`, then follow the run instructions in the project documentation.
+```mermaid
+flowchart TD
+    A[Walmart CSV dataset] --> B[Load and profile with Pandas]
+    B --> C[Clean data and standardise types]
+    C --> D[Store cleaned data in SQLite]
+    D --> E[Run SQL business queries]
+    E --> F[Export result tables with Pandas]
+    E --> G[Prepare grouped metrics]
+    G --> H[Generate charts with Matplotlib]
+    F --> I[Interpret findings]
+    H --> I
+    I --> J[Document business insights]
+```
+
+## Project structure
+
+- `src/clean_data.py` — inspects and cleans the source CSV, then saves the cleaned data to SQLite.
+- `src/run_analysis.py` — runs SQL queries and exports result tables.
+- `src/create_visualizations.py` — generates charts from the SQLite data.
+- `sql/business_queries.sql` — reusable SQL examples for business questions.
+- `Docs/` — project overview, data dictionary, methodology, and findings.
+- `data/README.md` — instructions for placing the source dataset locally.
+- `requirements.txt` — Python dependencies.
+
+## Tools used
+
+Python · Pandas · SQLite · SQL · Matplotlib
+
+## Setup and run
+
+1. Install the dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Place your authorised source file at `data/Walmart.csv` (see `data/README.md`).
+3. Clean the source data and create the SQLite database:
+
+   ```bash
+   python src/clean_data.py
+   ```
+
+4. Run the SQL analysis:
+
+   ```bash
+   python src/run_analysis.py
+   ```
+
+5. Generate the visualisations:
+
+   ```bash
+   python src/create_visualizations.py
+   ```
+
+Generated database files, local datasets, and chart outputs are excluded from version control by `.gitignore`.
