@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Source/customer data: do not commit private records
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+data/*.csv
+outputs/
+*.db
+*.sqlite
+*.sqlite3
+.DS_Store
