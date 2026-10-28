@@ -4,7 +4,7 @@ An end-to-end customer analytics project using Python, Pandas, and unsupervised 
 
 ## Architecture overview
 
-\`\`\`mermaid
+```mermaid
 flowchart TD
     A[Customer marketing CSV] --> B[Inspect and clean data]
     B --> C[Engineer customer features]
@@ -17,7 +17,7 @@ flowchart TD
     H --> J[Business recommendations]
     I --> J
     J --> K[Document insights and actions]
-\`\`\`
+```
 
 ## Business question
 
@@ -25,14 +25,14 @@ How can a business group customers by their purchasing behaviour and use those g
 
 ## Project structure
 
-- \`src/clean_data.py\` — data checks, cleaning, and feature engineering.
-- \`src/segment_customers.py\` — feature scaling, K-Means selection, and customer segment assignment.
-- \`src/analyze_segments.py\` — customer segment profiles and campaign/channel summaries.
-- \`src/create_visualizations.py\` — segment size, spending, and two-dimensional cluster plots.
-- \`src/run_pipeline.py\` — runs the workflow end to end.
-- \`Docs/\` — project overview, data dictionary, methodology, and findings notes.
-- \`data/README.md\` — explains how to add the local dataset.
-- \`requirements.txt\` — required Python libraries.
+- `src/clean_data.py` — data checks, cleaning, and feature engineering.
+- `src/segment_customers.py` — feature scaling, K-Means selection, and customer segment assignment.
+- `src/analyze_segments.py` — customer segment profiles and campaign/channel summaries.
+- `src/create_visualizations.py` — segment size, spending, and two-dimensional cluster plots.
+- `src/run_pipeline.py` — runs the workflow end to end.
+- `Docs/` — project overview, data dictionary, methodology, and findings notes.
+- `data/README.md` — explains how to add the local dataset.
+- `requirements.txt` — required Python libraries.
 
 ## Dataset
 
@@ -44,17 +44,17 @@ The dataset file is not included in this repository. Do not upload raw customer-
 
 From the project folder, install dependencies:
 
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
-Place the CSV at \`data/raw/marketing_campaign.csv\`, then run:
+Place the CSV at `data/raw/marketing_campaign.csv`, then run:
 
-\`\`\`bash
+```bash
 python src/run_pipeline.py
-\`\`\`
+```
 
-Outputs are written to \`outputs/\`, which is excluded from version control.
+Outputs are written to `outputs/`, which is excluded from version control.
 
 ## Methods
 
