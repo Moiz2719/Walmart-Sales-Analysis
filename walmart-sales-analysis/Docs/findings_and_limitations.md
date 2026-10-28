@@ -1,4 +1,4 @@
-# Findings from the notebook
+# Findings
 
 ## Results transcribed from the supplied PDF
 
