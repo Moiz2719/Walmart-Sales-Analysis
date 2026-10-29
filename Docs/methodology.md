@@ -29,6 +29,3 @@ Use grouping, aggregate functions, common table expressions, and window function
 
 Generate bar charts for payment-method volume, average ratings by category, the dataset-derived estimated-profit measure, and transaction volume by time of day.
 
-## 6. Interpret carefully
-
-Treat charts as descriptive, not causal. Validate the date range and `profit_margin` definition before making claims about year-over-year performance or actual accounting profit.
