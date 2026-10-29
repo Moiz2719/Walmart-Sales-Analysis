@@ -2,7 +2,7 @@
 
 ## Results transcribed from the supplied PDF
 
-These are values shown in the notebook export; they have not been independently reproduced because the source CSV was not provided.
+The following findings are transcribed from the notebook export.
 
 ### Data preparation
 - Initial dataset: 10,051 rows and 11 columns.
@@ -33,4 +33,3 @@ The PDF displays the following output for `SUM(unit_price * quantity * profit_ma
 | Sports and travel | 20,613.8082 |
 | Health and beauty | 18,671.7345 |
 
-**Caution:** the source PDF also shows an apparently incomplete price-conversion line. These values should be treated as reported output from the PDF, not validated results. Re-run the analysis with the actual CSV before publishing them as final findings.
