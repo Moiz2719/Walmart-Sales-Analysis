@@ -10,7 +10,7 @@ Python, Pandas, SQLite, SQL, and Matplotlib.
 
 ### 2. Customer Churn Analysis
 Python, Pandas, NumPy, SQLite, SQL, Matplotlib, and Seaborn.
-[Open project](./customer-churn-analysis/)
+[Open project](https://github.com/Moiz2719/Customer-Churn-Analysis)
 
 ### 3. Customer Segmentation & Business Strategy
 Python, Pandas, scikit-learn, K-Means clustering, and customer profiling.
