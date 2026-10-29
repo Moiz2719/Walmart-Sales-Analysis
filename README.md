@@ -14,6 +14,6 @@ Python, Pandas, NumPy, SQLite, SQL, Matplotlib, and Seaborn.
 
 ### 3. Customer Segmentation & Business Strategy
 Python, Pandas, scikit-learn, K-Means clustering, and customer profiling.
-[Open project](./customer-segmentation/)
+[Open project](https://github.com/Moiz2719/Customer-Segmentation)
 
 Each project includes source code, a `Docs/` folder, and a README with a high-level Mermaid architecture diagram.
