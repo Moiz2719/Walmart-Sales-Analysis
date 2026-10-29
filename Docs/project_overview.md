@@ -14,7 +14,7 @@ Retail teams can use transaction and customer-rating data to understand how cust
 - Load the cleaned data into SQLite.
 - Use SQL aggregations and window functions to answer business questions.
 - Generate visualisations with Matplotlib.
-- Document assumptions and limitations.
+- Document the analytical approach and findings.
 
 ## Intended audience
 
