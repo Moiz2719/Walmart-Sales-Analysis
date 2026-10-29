@@ -1,8 +1,9 @@
 # Walmart Sales Analysis
 
-A retail transaction analytics project using Python, Pandas, SQLite, SQL, and Matplotlib to explore payment behaviour, product-category ratings, transaction timing, and dataset-derived sales measures.
+A retail sales analytics project using Python, Pandas, SQLite and SQL to clean transaction data and explore payment-method patterns, transaction timing, product-category ratings and margin-based sales measures. Matplotlib charts support the analysis and help communicate the results.
 
 ## Architecture Overview
+
 The workflow moves from raw transaction data through cleaning and storage to SQL analysis and visual reporting.
 
 ```mermaid
@@ -31,7 +32,7 @@ flowchart TD
 
 ## Tools used
 
-A retail sales analytics project using Python, Pandas, SQLite and SQL to clean transaction data and explore payment-method patterns, transaction timing, product-category ratings and margin-based sales measures. Matplotlib charts support the analysis and help communicate the results.
+Python · Pandas · SQLite · SQL · Matplotlib
 
 ## Setup and run
 
